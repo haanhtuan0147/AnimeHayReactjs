@@ -3,12 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+//import { Provider } from 'react-redux'; 
+//import { legacy_createStore } from 'redux';
+import {BrowserRouter} from 'react-router-dom';
+//import reducers from './reducer/timeskip';
+//import {composeWithDevTools}from 'redux-devtools-extension'
+//const store=legacy_createStore(reducers,composeWithDevTools);
+import './css/css.css'
+import './css/cssbanva.css'
+import'./css/owl.carousel.min.css'
+import'./css/owl.theme.default.min.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  //<Provider store={store}>
+ 
   <React.StrictMode>
-    <App />
+     <BrowserRouter>
+     <App />
+     </BrowserRouter>
   </React.StrictMode>
+  //</Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
